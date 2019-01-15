@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="com.guilherme.introducaokotlin.CreateHabitActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_title"
+        android:hint="@string/habit_title"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_description"
+        android:layout_marginTop="4dp"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:lines="2"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_image"
+        android:onClick="chooseImage"
+        android:layout_marginTop="4dp"
+        android:text="@string/choose_image"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/iv_image"
+        android:padding="10dp"
+        android:contentDescription="Selected Image"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="storeHabit"
+        android:id="@+id/button_save"
+        android:text="@string/save_habit"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/error_text"
+        android:visibility="invisible"
+        android:gravity="center_horizontal"
+        android:textColor="@color/error"/>
+
+</LinearLayout>

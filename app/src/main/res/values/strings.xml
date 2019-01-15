@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Introducao Kotlin</string>
+    <string name="drink_water">Drink water</string>
+    <string name="drink_water_description">Hydrate pls</string>
+    <string name="begin_habit">Begin new habit…</string>
+    <string name="habit_title">Habit Title</string>
+    <string name="description">Description</string>
+    <string name="save_habit">Save Habit</string>
+    <string name="choose_image">Choose Image</string>
+</resources>
